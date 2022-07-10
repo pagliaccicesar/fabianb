@@ -152,6 +152,21 @@ main {
 }
 }
 
+@media (max-width: 636px) {
+  .frase {
+
+    padding-top:0px;
+    background: black;
+    overflow:hidden;
+    font: 4.2vw/180vh "Finger Paint";
+    text-align: center;
+    line-height: 40px;
+    color: transparent;
+    backface-visibility: hidden;
+    
+  }
+  }
+
 /*@media (max-width: 636px) {
   .base_hov .retract {
     width: 50px;
