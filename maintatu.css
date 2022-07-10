@@ -1,0 +1,306 @@
+body{
+    margin: 0;
+       padding: 0;
+       /*display: flex;
+       justify-content: center;
+       align-items: center;*/
+       
+       height: 12vh;
+       background: #2f3238;
+       font-family:consolas;
+  }
+  
+  
+  .btn-neon{
+     position: relative;
+     display: inline-block;
+     padding: 15px 30px;
+    
+     color: #fff;
+     letter-spacing: 2px;
+     text-decoration: none;
+     font-size: 24px;
+     overflow: hidden;
+     transition: 0.2s;
+  }
+  .btn-neon:hover{
+     background: #a945c7;
+     box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+     transition-delay: .5s;
+  }
+  .btn-neon span{
+     position: absolute;
+     display: block;
+  }
+  #span1{
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 2px;
+     background: linear-gradient(90deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span1{
+     left: 100%;
+     transition: 1s;
+  }
+  #span3{
+     bottom: 0;
+     right: -100%;
+     width: 100%;
+     height: 2px;
+     background: linear-gradient(270deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span3{
+     right: 100%;
+     transition: 1s;
+     transition-delay: 0.5s;
+  }
+  #span2{
+     top: -100%;
+     right: 0;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(180deg,transparent,#a945c7);
+  }
+  .btn-neon:hover #span2{
+     top: 100%;
+     transition: 1s;
+     transition-delay: 0.25s;
+  }
+  #span4{
+     bottom: -100%;
+     left: 0;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(360deg,transparent,#a945c7);
+  }
+  .btn-neon:hover #span4{
+     bottom: 100%;
+     transition: 1s;
+     transition-delay: 0.5s;
+  }
+  
+  /*pasa al  carrousel*/
+  
+  
+  
+  
+  
+  
+  
+  #carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+  }
+  #carousel:hover{
+    animation-play-state: paused;
+  }
+  #carousel figure{
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    left: 20px;
+    top: 30px;
+    background: #fdb707;
+   /* background: #4C4C4C;*/
+    
+    /*background: black;*/
+    overflow: hidden;
+    /*border: solid 5px black;*/
+    border: solid 5px #fdb707;
+  }
+  #carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+  #carousel figure:nth-child(2){ transform: rotateY(40deg) translateZ(288px);}
+  #carousel figure:nth-child(3){ transform: rotateY(80deg) translateZ(288px);}
+  #carousel figure:nth-child(4){ transform: rotateY(120deg) translateZ(288px);}
+  #carousel figure:nth-child(5){ transform: rotateY(160deg) translateZ(288px);}
+  #carousel figure:nth-child(6){ transform: rotateY(200deg) translateZ(288px);}
+  #carousel figure:nth-child(7){ transform: rotateY(240deg) translateZ(288px);}
+  #carousel figure:nth-child(8){ transform: rotateY(280deg) translateZ(288px);}
+  #carousel figure:nth-child(9){ transform: rotateY(320deg) translateZ(288px);}
+  #carousel figure:nth-child(10){ transform: rotateY(360deg) translateZ(288px);}
+  #carousel img{
+    -webkit-filter: grayscale(1);
+    cursor: pointer;
+    transition: all .5s ease;
+    width: 90%;
+  }
+  #carousel img:hover{
+    -webkit-filter: grayscale(0);
+    transform: scale(1.2,1.2);
+  }
+  @keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+  }
+  
+  /* pasamos a galeria de tatuajes*/
+  
+  
+  #carousel {
+    margin-top: -450px;
+  }
+  
+  .tatuajes {
+    margin-top: 450px;
+  }
+  
+  @media (max-width: 500px) {
+    .tatuajes {
+      margin-top: 430px;
+         
+    }
+  }
+  @media (max-width: 500px) {
+    #carousel {
+      margin-top: -430px;
+         
+    }
+  }
+  
+  body {
+       background-color: #4C4C4C;
+     }
+     
+     .container {
+       /*position: absolute;*/
+       font-size: 0;
+       width: 100%;
+       margin-top: 50px;
+       text-align: center;
+     }
+     
+     .card {
+       overflow: hidden;
+       position: relative;
+       display: inline-block;
+       height: 400px;
+       width: 600px;
+       /*
+       Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
+       */
+     }
+     
+     .img-container {
+       transition: transform .1s ease;
+     }
+     
+     .img-container:hover {
+       transform: scale(1.1);
+       /*
+       Change the scale value as much as you want to change the amount of zoom on hover.
+       */
+     }
+     
+     .card img {
+       opacity: .5;
+       transform: translate(0,0);
+       /*
+       Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+       */
+       transition: opacity .25s ease-in-out;
+     }
+     
+     .card img:hover {
+       opacity: 1;
+     }
+   
+     @media (max-width: 800px) {
+         .img {
+           
+           width: 100%;
+           height: auto;
+                 
+           
+         }
+     }
+   
+     @media (max-width: 800px) {
+       .card {
+         overflow: hidden;
+         position: relative;
+         display: inline-block;
+         height: 200px;
+         width: 300px; 
+       }
+   }
+  
+   /** probando sacar de de maninfotos , css de galeria def otos*/
+  
+   body {
+    background-color: #fdb707;
+  }
+  
+  .container {
+    /*position: absolute;*/
+    font-size: 0;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .card {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    width: 600px;
+    /*
+    Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
+    */
+  }
+  
+  .img-container {
+    transition: transform .1s ease;
+  }
+  
+  .img-container:hover {
+    transform: scale(1.1);
+    /*
+    Change the scale value as much as you want to change the amount of zoom on hover.
+    */
+  }
+  
+  .card img {
+    opacity: .5;
+    transform: translate(0,0);
+    
+    /*
+    Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+    */
+    transition: opacity .25s ease-in-out;
+  }
+  
+  .card img:hover {
+    opacity: 1;
+    /*-webkit-filter: grayscale(100%);
+      filter: grayscale(100%);*/
+  }
+  
+  @media (max-width: 800px) {
+      .img {
+        
+        width: 100%;
+        height: auto;
+              
+        
+      }
+  }
+  
+  @media (max-width: 800px) {
+    .card {
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      height: 200px;
+      width: 300px; 
+    }
+  }

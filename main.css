@@ -1,0 +1,217 @@
+.fond{position:absolute;padding-top:45px;top:0;left:0; right:0;bottom:0;
+}
+
+/*empieza el header de tres cabezas*/  
+
+ .carre_couleur
+ {
+   width:200px;
+   height: 200px;
+   display: inline-block;
+   position: relative;
+   margin-top: 0px;
+ }
+ .base_hov .retract
+ {
+   -webkit-transition: all 200ms ease-in;
+   -webkit-transform-origin: 50% 20%; 
+   -webkit-transform: scale(1);
+   -moz-transition: all 200ms ease-in;
+   -moz-transform-origin: 50% 20%;
+   -moz-transform: scale(1);
+   -ms-transition: all 200ms ease-in;
+   -ms-transform-origin: 50% 20%;
+   -ms-transform: scale(1);
+   transition: all 200ms ease-in;
+   transform-origin: 50% 20%;
+   transform: scale(1);
+   width:200px;
+   height: 200px;
+   position: absolute;
+   z-index: 2;
+   left:0;
+ }
+ .base_hov:hover .retract
+ {
+   -webkit-transition: all 200ms ease-in;
+   -webkit-transform: scale(0.6);
+   -moz-transition: all 200ms ease-in;
+   -moz-transform: scale(0.6);
+   -ms-transition: all 200ms ease-in;
+   -ms-transform: scale(0.6);
+   transition: all 200ms ease-in;
+   transform: scale(0.6);
+ }
+ .acced
+ {
+   width: 180px;
+   padding:10px;
+   bottom:0; 
+   position:absolute;
+   z-index: 1; 
+   text-align: center;
+ }
+ .big_acced
+ {
+   color:#ffffff;
+   font-size:18px;
+   font-weight: 400;
+   font-family:'Finger Paint';
+   
+ } 
+ .retract {
+  border-radius: 20%;
+ }
+
+/* css de main frase y footer*/
+
+main {
+  position:absolute;
+  padding-top:300px;
+  top:0;
+  left:0; 
+  right:0;
+  bottom:0; 
+  background-color: black;
+  }
+
+* {
+  /*margin: 0;*/
+  
+  box-sizing: border-box;
+}
+/* css de la frase*/
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+.frase {
+  padding-top: 100px;
+  background: black;
+  overflow:hidden;
+  font: 3.2vw/100vh "Finger Paint";
+  text-align: center;
+  line-height: 50px;
+  color: transparent;
+  backface-visibility: hidden;
+}
+
+span {   
+  display: inline-block;
+  text-shadow: 0 0 0 #fdb707;
+  animation: smoky 10s 5s both;
+}
+
+span:nth-child(even){
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px #fdb707;
+  }
+  to {
+    transform:
+      translate3d(10rem,-3rem,0)
+      rotate(-1deg)
+      skewX(-2deg)
+      scale(1.5);
+    text-shadow: 0 0 20px #fdb707;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px #fdb707; }
+  to {
+    transform:
+      translate3d(12rem,-3rem,0)
+      rotate(-1deg) 
+      skewX(-2deg)
+      scale(1);
+     text-shadow: 0 0 20px #fdb707;
+    opacity: 0;
+  }
+}
+
+@for $item from 1 through 21 {
+  span:nth-of-type(#{$item}){ 
+    animation-delay: #{(3 + ($item/10))}s; 
+  }
+} 
+
+
+@media (max-width: 636px) {
+main {
+  padding-top:500px;
+  top:0;left:0;
+  right:0;
+  bottom:0;
+}
+}
+
+/*@media (max-width: 636px) {
+  .base_hov .retract {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+  }
+  }
+
+  @media (max-width: 636px) {
+    .big_acced {
+      font-size: 12px;
+
+    }}
+
+    @media (max-width: 636px) {
+    .acced
+    {
+      width: 90px;
+      height: auto;
+      padding:10px;
+      bottom:0; 
+      position:absolute;
+      z-index: 1; 
+      text-align: center;
+    }}*/
+
+
+
+/*@media (max-width: 423px) {
+.carre_couleur {
+width: 50%;
+height: auto;
+display: inline-block;
+position: relative;
+margin-top: 0px;}}*/
+
+@media (max-width: 423px) {
+main {
+  padding-top: 700px;
+  top:0;left:0;
+  right:0;
+  bottom:0;
+}
+}
+
+
+/*css de galeria de diseño*/
+
+.dibujo1, .dibujo2, .dibujo3, .dibujo4, .dibujo5, .dibujo6, .dibujo7, .dibujo8, .dibujo9, .dibujo10, .dibujo11, .dibujo12, .dibujo13, .dibujo14, .dibujo15 {
+justify-content: space-around;
+padding-top: 100px;
+width: 100%;
+height: auto;
+size: 100%;
+align-items: center;
+filter: saturate(0%);
+margin:2px 0px 0px 2px;}
+
+.dibujo1:hover, .dibujo2:hover, .dibujo3:hover, .dibujo4:hover, .dibujo5:hover, .dibujo6:hover, .dibujo7:hover, .dibujo8:hover, .dibujo9:hover, .dibujo10:hover, .dibujo11:hover, .dibujo12:hover, .dibujo13:hover, .dibujo14:hover, .dibujo15:hover {
+filter: saturate(250%);
+}
