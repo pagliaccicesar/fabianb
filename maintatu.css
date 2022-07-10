@@ -1,21 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
 body{
     margin: 0;
        padding: 0;
-       /*display: flex;
-       justify-content: center;
-       align-items: center;*/
-       
        height: 12vh;
        background: #2f3238;
-       font-family:consolas;
+       font-family:'Finger Paint';     
   }
   
   
   .btn-neon{
      position: relative;
      display: inline-block;
-     padding: 15px 30px;
-    
+     padding: 15px 30px;    
      color: #fff;
      letter-spacing: 2px;
      text-decoration: none;

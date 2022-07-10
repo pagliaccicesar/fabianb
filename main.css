@@ -181,7 +181,7 @@ main {
     position: relative;
     margin-top: 0px;
   }
-  }
+  }/*
 
   @media (max-width: 636px) {
     .big_acced {
@@ -213,7 +213,7 @@ margin-top: 0px;}}*/
 
 @media (max-width: 423px) {
 main {
-  padding-top: 700px;
+  padding-top: 620px;
   top:0;left:0;
   right:0;
   bottom:0;
