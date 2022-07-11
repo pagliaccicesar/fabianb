@@ -265,7 +265,8 @@ body{
     Change the scale value as much as you want to change the amount of zoom on hover.
     */
   }
-  
+
+    
   .card img {
     opacity: .5;
     transform: translate(0,0);
