@@ -34,11 +34,11 @@
  .base_hov:hover .retract
  {
    -webkit-transition: all 200ms ease-in;
-   -webkit-transform: scale(0.6);
+   -webkit-transform: scale(0.5);
    -moz-transition: all 200ms ease-in;
-   -moz-transform: scale(0.6);
+   -moz-transform: scale(0.5);
    -ms-transition: all 200ms ease-in;
-   -ms-transform: scale(0.6);
+   -ms-transform: scale(0.5);
    transition: all 200ms ease-in;
    transform: scale(0.6);
  }
