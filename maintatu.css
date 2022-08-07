@@ -179,8 +179,8 @@ body{
        overflow: hidden;
        position: relative;
        display: inline-block;
-       height: 400px;
-       width: 600px;
+       height: 800px;
+       width: 533px;
        /*
        Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
        */
@@ -225,8 +225,8 @@ body{
          overflow: hidden;
          position: relative;
          display: inline-block;
-         height: 200px;
-         width: 300px; 
+         height: 500px;
+         width: 366px; 
        }
    }
   
@@ -248,8 +248,8 @@ body{
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 400px;
-    width: 600px;
+    height: 800px;
+    width: 533px;
     /*
     Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
     */
@@ -298,7 +298,7 @@ body{
       overflow: hidden;
       position: relative;
       display: inline-block;
-      height: 200px;
-      width: 300px; 
+      height: 550px;
+      width: 366px; 
     }
   }
