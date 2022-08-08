@@ -198,7 +198,7 @@ body{
      }
      
      .card img {
-       opacity: .5;
+       /*opacity: .5;*/
        transform: translate(0,0);
        /*
        Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
@@ -207,7 +207,8 @@ body{
      }
      
      .card img:hover {
-       opacity: 1;
+       /*opacity: 1;*/
+       cursor: pointer;
      }
    
      @media (max-width: 800px) {
@@ -268,7 +269,7 @@ body{
 
     
   .card img {
-    opacity: .5;
+    /*opacity: .5;*/
     transform: translate(0,0);
     
     /*
@@ -278,7 +279,7 @@ body{
   }
   
   .card img:hover {
-    opacity: 1;
+    /*opacity: 1;
     /*-webkit-filter: grayscale(100%);
       filter: grayscale(100%);*/
   }
